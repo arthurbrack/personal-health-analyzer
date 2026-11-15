@@ -27,7 +27,13 @@ In der [Google API Library](https://console.cloud.google.com/apis/library/drive.
 
 ### 4. Drive-Scope konfigurieren
 
-In der [Google Cloud Console](https://console.cloud.google.com/) das Projekt auswählen und links zu **Google Auth Platform → Data Access / Datenzugriff** navigieren. Einen direkten Link zu dieser Unterseite verwenden wir bewusst nicht, da er je nach Console-Ansicht bzw. Projekt nicht funktioniert. Dort über **Add or remove scopes / Berechtigungen hinzufügen oder entfernen** folgenden Scope auswählen bzw. hinzufügen:
+In der [Google Cloud Console](https://console.cloud.google.com/) das Projekt **Personal Health Analyzer** auswählen und dann:
+
+1. Im linken Hauptmenü **APIs und Dienste** öffnen (nicht **Sicherheit**).
+2. **OAuth-Zustimmungsbildschirm** auswählen. Dadurch gelangst du zur **Google Auth Platform**.
+3. In der Navigation der Google Auth Platform **Datenzugriff / Data Access** öffnen.
+4. Auf **Berechtigungen hinzufügen oder entfernen / Add or remove scopes** klicken.
+5. Folgenden Scope auswählen bzw. hinzufügen:
 
 ```text
 https://www.googleapis.com/auth/drive.readonly
