@@ -1,0 +1,98 @@
+/* Personal Health Analyzer — Layout und Gestaltung der iPhone-Test-App */
+:root {
+  color-scheme: dark;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  color: #edf4ff;
+  background: #0b1220;
+}
+* { box-sizing: border-box; }
+body { margin: 0; }
+main {
+  max-width: 560px;
+  margin: auto;
+  padding: calc(32px + env(safe-area-inset-top)) 20px 60px;
+}
+header, .between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+}
+h1 {
+  font-size: 34px;
+  letter-spacing: -1.4px;
+  line-height: 1.1;
+  margin: 15px 0 14px;
+}
+p { color: #a4b5d0; line-height: 1.5; }
+.eyebrow {
+  font-size: 12px;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  color: #93b5e8;
+  font-weight: 800;
+}
+.card {
+  border: 1px solid #2e405c;
+  background: #182338;
+  border-radius: 22px;
+  padding: 20px;
+  margin: 16px 0;
+  box-shadow: 0 8px 24px #0002;
+}
+label {
+  font-size: 13px;
+  font-weight: 650;
+  display: block;
+  margin: 15px 0 7px;
+  color: #c1d1e9;
+}
+input {
+  display: block;
+  width: 100%;
+  font: inherit;
+  padding: 13px 12px;
+  border-radius: 12px;
+  background: #0f1b2c;
+  border: 1px solid #3a506d;
+  color: white;
+}
+button {
+  font: inherit;
+  font-weight: 750;
+  border: 0;
+  border-radius: 13px;
+  padding: 14px;
+  cursor: pointer;
+}
+button.primary { background: #83b9ff; color: #08172a; width: 100%; }
+button.alt { background: #2a3d58; color: #edf4ff; }
+button:disabled { opacity: .5; }
+.small { font-size: 12px; color: #91a9ca; }
+.chip {
+  font-size: 12px;
+  border-radius: 99px;
+  background: #30435f;
+  padding: 6px 10px;
+  color: #d4e3fb;
+}
+.metrics { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+.metric { padding: 18px; background: #111c2d; border-radius: 14px; }
+.number { font-size: 34px; font-weight: 800; letter-spacing: -1px; }
+pre {
+  background: #0c1726;
+  padding: 15px;
+  border-radius: 12px;
+  color: #c1f3db;
+  overflow-wrap: anywhere;
+  white-space: pre-wrap;
+  font-size: 13px;
+}
+#error { color: #ffaaaa; }
+footer {
+  font-size: 12px;
+  color: #7890b1;
+  line-height: 1.5;
+  margin-top: 25px;
+}
+[hidden] { display: none !important; }
