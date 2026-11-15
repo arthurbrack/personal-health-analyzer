@@ -4,6 +4,19 @@ Eine einfache, für das iPhone optimierte Test-Web-App. Sie meldet sich über Go
 
 **Web-App:** https://arthurbrack.github.io/personal-health-analyzer/
 
+## Projektstruktur
+
+Die Test-App benötigt keinen Build-Prozess, keinen npm-Server und kein Backend.
+
+| Datei | Aufgabe |
+| --- | --- |
+| `index.html` | Semantisches HTML: Anmeldeformular, Trainingsanzeige und Statusmeldungen. |
+| `styles.css` | Responsives Design für das iPhone. |
+| `app.js` | Google OAuth, lokale Speicherung der Client-ID, Drive-Dateisuche, JSON-Abruf und Anzeige. |
+| `README.md` | Einrichtung und Bedienung. |
+
+**Datenfluss:** Nach dem Klick auf „Mit Google anmelden“ fordert das JavaScript von Google ein kurzlebiges Zugriffstoken an. Die App sucht anschließend per Drive API nach `test.json` und lädt die gefundene Datei direkt in Safari. Es werden keine Gesundheitsdaten an GitHub übertragen. Ein neues Zugriffstoken wird nach dem Schließen oder Neuladen der Seite gegebenenfalls erneut benötigt.
+
 ## Google OAuth Client-ID erstellen
 
 Die App benötigt **eine OAuth Client-ID für eine Webanwendung**. Sie wird **nicht im Quellcode hinterlegt**, sondern beim ersten Start in der App eingegeben und lokal im Browser gespeichert.
