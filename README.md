@@ -27,7 +27,7 @@ In der [Google API Library](https://console.cloud.google.com/apis/library/drive.
 
 ### 4. Drive-Scope konfigurieren
 
-Unter [Google Auth Platform → Data Access/Datenzugriff](https://console.cloud.google.com/auth/data-access) folgenden Scope hinzufügen:
+In der [Google Cloud Console](https://console.cloud.google.com/) das Projekt auswählen und links zu **Google Auth Platform → Data Access / Datenzugriff** navigieren. Einen direkten Link zu dieser Unterseite verwenden wir bewusst nicht, da er je nach Console-Ansicht bzw. Projekt nicht funktioniert. Dort über **Add or remove scopes / Berechtigungen hinzufügen oder entfernen** folgenden Scope auswählen bzw. hinzufügen:
 
 ```text
 https://www.googleapis.com/auth/drive.readonly
